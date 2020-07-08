@@ -56,14 +56,14 @@ namespace phonetic{
 				char str[i-j+1];
 				memset(str, 0, i-j+1);
 				text.copy(str, i-j, j);
-				if(isClose(str, word))
+				if(similar(str, word))
 					return str;
 				j=i+1;
 			}
 			i++;
 
 		}
-		throw runtime_error("Couldn't find the word \"" + word +"\"");
+		throw runtime_error("word wasn't found\"" + word +"\"");
 	}
 
 }
