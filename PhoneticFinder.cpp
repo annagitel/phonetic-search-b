@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 #include "PhoneticFinder.hpp"
 using namespace std;
 namespace phonetic{
